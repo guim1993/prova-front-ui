@@ -1,0 +1,25 @@
+.header {
+  padding: 20px;
+  background-color: #444;
+  box-shadow: 0px 0px 20px 0px #444;
+
+  .site-title {
+    padding: 20px 10px;
+    font-size: 24px;
+    color: #FFF;
+    text-align: center;
+  }
+  
+  .search {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 14px;
+    color: #495057;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  }
+}

@@ -57,7 +57,7 @@ class Film extends Component {
     
     return (
       <React.Fragment>
-        <section className="detail">
+        <section className="film-detail">
           <FilmImage title={film.title} />
           <FilmDetails film={film} />
           <FilmDescription description={film.opening_crawl} />
