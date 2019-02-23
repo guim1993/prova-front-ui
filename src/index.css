@@ -115,5 +115,39 @@ table {
 }
 
 .film-item a {
+  position: relative;
   display: block;
+}
+
+.film-item .film-img {
+  display: block;
+}
+
+.film-item .see-more {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .7);
+  visibility: hidden;
+  opacity: 0;
+  transition: .5s;
+}
+.film-item .see-more p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  color: #FFF;
+}
+
+.film-item a:hover .see-more {
+  visibility: visible;
+  opacity: 1;
+}
+
+.film-item p {
+  padding: 5px;
 }
