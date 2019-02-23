@@ -12,7 +12,6 @@
 .film-item-link {
   position: relative;
   display: block;
-
   &:hover {
     .film-item-more {
       visibility: visible;
@@ -37,7 +36,6 @@
   visibility: hidden;
   opacity: 0;
   transition: .5s;
-
   p {
     position: absolute;
     top: 50%;
