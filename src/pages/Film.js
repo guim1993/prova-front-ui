@@ -2,6 +2,9 @@ import { Link } from 'react-router-dom';
 import React, { Component } from 'react';
 import Requests from '../services/Requests';
 
+import Loader from '../components/commons/Loader';
+
+import FilmImage from '../components/FilmImage';
 import FilmDetails from '../components/FilmDetails';
 import FilmDescription from '../components/FilmDescription';
 
@@ -51,17 +54,18 @@ class Film extends Component {
   render() {
     const { film } = this.state;
     film.release_date = film.release_date ? new Intl.DateTimeFormat().format(new Date(film.release_date)) : '';
-
+    
     return (
       <React.Fragment>
         <section className="detail">
-          <div className="image-container">
-            <img className="img-big" src="../images/cover-b.png" alt={film.title} />
-          </div>
+          <FilmImage title={film.title} />
           <FilmDetails film={film} />
           <FilmDescription description={film.opening_crawl} />
           <Link className="back-page" to="/">Voltar</Link>
         </section>
+
+        {!this.state.film.title && <Loader />}
+
       </React.Fragment>
     );
   }

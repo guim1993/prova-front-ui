@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import Requests from '../services/Requests';
+
+import Loader from '../components/commons/Loader';
+
 import Films from '../components/Films';
 
 class Home extends Component {
@@ -24,6 +27,7 @@ class Home extends Component {
     return (
       <React.Fragment>
         <Films films={this.state.films} />
+        {!this.state.films.results && <Loader />}
       </React.Fragment>
     );
   }

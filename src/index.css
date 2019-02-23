@@ -61,6 +61,18 @@ table {
   min-height: 100vh;
 }
 
+.loader {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF;
+}
+
 .header {
   padding: 20px;
   background-color: #444;
@@ -88,6 +100,7 @@ table {
 }
 
 .main {
+  position: relative;
   flex: 1;
   padding: 40px 20px;
 }
@@ -199,6 +212,11 @@ table {
   line-height: 20px;
 }
 
+.not-fount {
+  text-align: center;
+}
+
 .back-page {
+  display: inline-block;
   margin-top: 15px;
 }
