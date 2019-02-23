@@ -30,6 +30,19 @@ class Requests {
         });
     }
 
+    getGenericEndpoint(endpoint) {
+        return new Promise((resolve, reject) => {
+            fetch(endpoint)
+                .then(response => response.json()
+                .then(data => {
+                    resolve(data);
+                })
+                .catch(error => {
+                    reject(error);
+                }));
+        });
+    }
+
 }
 
 export default Requests;

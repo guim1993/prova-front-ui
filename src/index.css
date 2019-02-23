@@ -32,7 +32,7 @@ body {
   min-height: 100vh;
   line-height: 1;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   color: #444;
 }
 ol, ul {
@@ -110,7 +110,7 @@ table {
 }
 
 .film-item {
-  margin: 35px;
+  margin: 20px 35px;
   text-align: center;
 }
 
@@ -121,6 +121,8 @@ table {
 
 .film-item .film-img {
   display: block;
+  margin-bottom: 5px;
+  box-shadow: 0px 1px 5px 0px #000;
 }
 
 .film-item .see-more {
@@ -150,4 +152,53 @@ table {
 
 .film-item p {
   padding: 5px;
+}
+
+.detail {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.image-container {
+  width: 50%;
+}
+.img-big {
+  width: 100%;
+  height: auto;
+}
+
+.film-detail {
+  width: 50%;
+  padding-left: 30px;
+}
+
+.film-title {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.film-infos li {
+  margin: 5px 0 10px;
+}
+
+.film-infos li.sub-itens a {
+  display: inline-block;
+  margin: 3px 3px 0 0;
+  padding: 1px 3px;
+  border-radius: 2px;
+  background-color: #ececec;
+  font-size: 10px;
+  color: #444;
+  text-decoration: none;
+}
+
+.film-description {
+  width: 100%;
+  margin-top: 15px;
+  line-height: 20px;
+}
+
+.back-page {
+  margin-top: 15px;
 }
