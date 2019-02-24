@@ -5,7 +5,9 @@ Projeto em React, para avaliação de conhecimento.
 ## Requerimentos
 
 Para o desenvolvimento, você precisa ter Node.js instalado em sua máquina.
+
 Para testar a versão de produção, é recomendado instalar o [serve](https://www.npmjs.com/package/serve), mas pode ser qualquer outro servidor (se usar um servidor como Apache, cuidar os paths, "homepage" - package.json).
+
 O projeto utiliza o plugin [Editorconfig](http://editorconfig.org/), recomendado ter instalado (opcional).
 
 ## Instalação
