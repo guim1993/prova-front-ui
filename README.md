@@ -34,6 +34,13 @@ O projeto utiliza o plugin [Editorconfig](http://editorconfig.org/), recomendado
 
     $ serve -s build
 
+## Rodar testes
+
+  Rotina simples de testes do próprio React
+  
+  $ npm run test
+  
+  E siga os passos que o console disponibilizar
 
 ## Tecnologias
 
