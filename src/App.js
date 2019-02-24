@@ -20,10 +20,7 @@ class App extends Component {
     };
   }
 
-  handleSearch(event) {
-    console.log(this.props);
-    const { value } = event.currentTarget;
-    if(value.length > 0 && value.length < 4) return false;
+  handleSearch(value) {
     this.setState({
       search: value
     })
