@@ -38,7 +38,7 @@ O projeto utiliza o plugin [Editorconfig](http://editorconfig.org/), recomendado
 
   Rotina simples de testes do próprio React
   
-  $ npm run test
+    $ npm run test
   
   E siga os passos que o console disponibilizar
 
