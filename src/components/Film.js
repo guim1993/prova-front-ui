@@ -5,9 +5,10 @@ class Film extends Component {
   render() {
     const { film } = this.props;
     const date = new Date(film.release_date);
+    film.id = film.url.replace(/\D/g, '');
     return (
       <li className="film-item">
-        <Link className="film-item-link" to={`/film/${film.episode_id}`}>
+        <Link className="film-item-link" to={`/film/${film.id}`}>
           <img className="film-item-img" src="images/cover.png" alt={film.title} />
           <div className="film-item-more">
             <p>Clique para ver mais informações</p>
