@@ -7,7 +7,7 @@ class Header extends Component {
     return (
       <header className="header">
         <h1 className="site-title">Prova Front UI</h1>
-        <Search />
+        <Search handleSearch={this.props.handleSearch} />
       </header>
     );
   }

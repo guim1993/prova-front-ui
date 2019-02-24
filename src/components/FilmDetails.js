@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import React, { Component } from 'react';
 
 class FilmDetails extends Component {
@@ -7,7 +6,7 @@ class FilmDetails extends Component {
     if (!childrens) return;
 
     const childrensList = childrens.map((child, i) => {
-      return <Link key={i} to="/people/1" className="sub-itens-link">{child.name}</Link>
+      return <span key={i} className="sub-itens">{child.name}</span>
     });
     
     return childrensList;

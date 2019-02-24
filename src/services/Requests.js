@@ -4,9 +4,10 @@ class Requests {
         this.API = `https://swapi.co/api`;
     }
 
-    getAllFilms() {
+    getAllFilms(search) {
+      const query = search.length > 0 ? `?search=${search}` : '';
         return new Promise((resolve, reject) => {
-            fetch(`${this.API}/films`)
+            fetch(`${this.API}/films${query}`)
                 .then(response => response.json()
                 .then(data => {
                     resolve(data);

@@ -11,6 +11,10 @@ class Films extends Component {
       return false;
     }
 
+    if (films.count === 0) {
+      return <li>Nenhum filme encontrado</li>
+    }
+
     const filmsList = films.results.map((film, i) => {
       return <Film key={i} film={film} />
     });

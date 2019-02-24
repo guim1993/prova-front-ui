@@ -18,9 +18,12 @@ class Home extends Component {
   }
 
   componentDidMount() {
-    this.requests.getAllFilms().then(result => this.setState({
+    const { search } = this.props;
+    this.requests.getAllFilms(search).then(result => this.setState({
       films: result
-    }));
+    })).catch(error => {
+      console.log(error);
+    });
   }
 
   render() {
